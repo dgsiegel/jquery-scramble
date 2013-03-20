@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery scramble plugin</title>
+</head>
+
+<body>
+  <h1>jQuery scramble plugin</h1>
+  <p>git repository: <a href="http://git.dgsiegel.net/jquery-scramble.git">http://git.dgsiegel.net/jquery-scramble.git</a></p>
+
+  <pre><code>
+    var el = $(&#39;ul li&#39;).scramble();
+    $(&#39;ul&#39;).empty().append(el);
+    console.log(el);
+  </code></pre>
+
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+    <li>item 6</li>
+    <li>item 7</li>
+    <li>item 8</li>
+    <li>item 9</li>
+    <li>item 10</li>
+  </ul>
+
+  <a id="ex1" href="#">shuffle!</a>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+  <script src="jquery.scramble.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#ex1').click(function() {
+        var el = $('ul li').scramble();
+        $('ul').empty().append(el);
+        console.log(el);
+      });
+    });
+  </script>
+</body>
+</html>
