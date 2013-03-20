@@ -5,7 +5,6 @@
  * A jQuery plugin using the fisher yates shuffle algorithm
  * for scrambling a set of elements
  * http://en.wikipedia.org/wiki/Fisher-Yates_shuffle
- * http://en.wikipedia.org/wiki/fisher-yates_shuffle
  *
  * Usage: $(selector).scramble();
  *
